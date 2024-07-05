@@ -1,0 +1,716 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="template.css">
+    <link rel="stylesheet" href="./font/bootstrap-icons.css">
+
+    <title>Hello, world!</title>
+</head>
+
+<body>
+    <!-- ---------------navbar------------- -->
+
+    <div class="sticky-top bg-white p-2 shadow mt-5" style="opacity: .95;">
+        <nav class="navbar navbar-expand-lg navbar-light container">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Web Developers!</a>
+                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarColor03">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0 ">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#navbarHome">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#navbarFeatures">Features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#navbarBlog">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#navbarTeam">Our Team</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#navbarConatct">Contact</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex justify-content-lg-center" style=" width: 150px;">
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#getStartModal">
+                            Get Started
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+
+    <!----------------------- Modal ----------------------->
+    <div class="modal fade" id="getStartModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Email Address</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="contactEmail" placeholder="name@example.com">
+                        </div>
+                        <button class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- -----------------Back to top ---------------- -->
+
+
+    <a href="#" class="bg-warning rounded-circle d-flex justify-content-center align-items-center opacity-75"
+        style="width: 40px ; height:40px; position: fixed; bottom: 10px; right: 10px; ">
+        <i class="bi bi-arrow-up  "></i>
+    </a>
+
+
+    <!-- ------------header------------- -->
+
+    <div class="container py-5">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <h2 class="display-4 mb-3">Build <span class="text-warning">reactive </span> Website easily</h2>
+                <p class=" text-muted lead mb-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus
+                    architecto
+                    facere, eum necessitatibus magnam fuga maiores quam dolorum sequi voluptatem.</p>
+                <div class="text-center text-md-start">
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                        data-bs-target="#getStartModal">
+                        Get Started
+                    </button>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <img src="./img/Server-rafiki.svg" class="img-fluid">
+            </div>
+        </div>
+    </div>
+
+    <!-- -------------------Features---------------- -->
+
+    <div class="py-4 bg-primary" id="navbarFeatures">
+        <section class="container">
+            <h2 class="display-5 text-center mt-5">Features</h2>
+            <p class="text-muted lead text-center mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Necessitatibus expedita animi nesciunt fuga repellat unde pariatur explicabo et natus. Quo!</p>
+            <div class="row g-4 pb-5">
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="card shadow text-center p-4">
+                        <div class="card-body">
+                            <i class="bi bi-cpu mb-4 text-primary" style="font-size: 48px;"></i>
+                            <h5 class="card-title mb-2">Special title treatment</h5>
+                            <p class="card-text text-muted lead">With supporting text below as a natural lead-in to
+                                additional content.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="card shadow text-center p-4">
+                        <div class="card-body">
+                            <i class="bi bi-reception-4 mb-4 text-primary" style="font-size: 48px;"></i>
+                            <h5 class="card-title mb-2">Grewth</h5>
+                            <p class="card-text text-muted lead">With supporting text below as a natural lead-in to
+                                additional content.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="card shadow text-center p-4">
+                        <div class="card-body">
+                            <i class="bi bi-hdd-network mb-4 text-primary" style="font-size: 48px;"></i>
+                            <h5 class="card-title mb-2">NetWork</h5>
+                            <p class="card-text text-muted lead">With supporting text below as a natural lead-in to
+                                additional content.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="card shadow text-center p-4">
+                        <div class="card-body">
+                            <i class="bi bi-database-fill mb-4 text-primary" style="font-size: 48px;"></i>
+                            <h5 class="card-title mb-2">Server</h5>
+                            <p class="card-text text-muted lead">With supporting text below as a natural lead-in to
+                                additional content.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="card shadow text-center p-4">
+                        <div class="card-body">
+                            <i class="bi bi-cloud-arrow-down mb-4 text-primary" style="font-size: 48px;"></i>
+                            <h5 class="card-title mb-2">Cloud</h5>
+                            <p class="card-text text-muted lead">With supporting text below as a natural lead-in to
+                                additional content.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="card shadow text-center p-4">
+                        <div class="card-body">
+                            <i class="bi bi-download mb-4 text-primary" style="font-size: 48px;"></i>
+                            <h5 class="card-title mb-2">Download</h5>
+                            <p class="card-text text-muted lead">With supporting text below as a natural lead-in to
+                                additional content.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- #-------------------------advertisment1-------------------------------- -->
+
+
+
+    <div class="container py-4">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <h2 class="display-4 mb-3">Be <span style="color: #19af69;">Fast</span> and <span
+                        style="color: #19af69;">reactive</span></h2>
+                <p class=" text-muted lead mb-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus
+                    architecto
+                    facere, eum necessitatibus magnam fuga maiores quam dolorum sequi voluptatem.</p>
+                <div class="text-center text-md-start">
+                    <a href="#" class="btn btn-primary">
+                        <i class="bi bi-chevron-right"></i>
+                        Read more
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <img src="./img/Pair programming-cuate.svg" class="img-fluid ">
+            </div>
+        </div>
+    </div>
+
+    <!-- -----------------------advertisment2-------------------------------- -->
+
+    <div class=" py-4 " style="background-color: #081828;">
+        <section class="container ">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <img src="./img/Programming-pana.svg" class="img-fluid">
+                </div>
+                <div class="col-md-6">
+                    <h2 class="display-4 mb-3 text-white">Suitable for <span class="text-warning">big project</span>
+                    </h2>
+                    <p class=" text-muted lead mb-4 text-white">Lorem ipsum dolor sit, amet consectetur adipisicing
+                        elit.
+                        Voluptatibus
+                        architecto
+                        facere, eum necessitatibus magnam fuga maiores quam dolorum sequi voluptatem.</p>
+                    <div class="text-center text-md-start">
+                        <a href="#" class="btn btn-primary">
+                            <i class="bi bi-chevron-right"></i>
+                            Read more
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- ------------------Post------------------------------ -->
+
+
+    <div class="py-4" id="navbarBlog">
+        <main class="container">
+            <h2 class="display-5 text-center mt-5">Recent posts form our Blog</h2>
+            <p class="text-muted lead text-center mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Necessitatibus expedita animi nesciunt fuga repellat unde pariatur explicabo et natus. Quo!</p>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="card shadow mb-3 d-flex  align-items-center p-3">
+                        <img src="./img/post1.jpeg" class="card-img-top" alt="...">
+                        <p class="card-text"><small class="text-muted m-3">Last updated 3 mins ago</small></p>
+                        <div class="card-body">
+                            <h5 class="card-title mb-3">This is a wider card with supporting text below as a natural
+                                lead-in
+                                to
+                                additional content. This content is a little bit longer.</h5>
+                            <a href="#" class="card-text fs-6">
+                                <i class="bi bi-arrow-right"></i>
+                                Read more
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card shadow mb-3 d-flex align-items-center p-3">
+                        <img src="./img/post2.jpg" class="card-img-top" alt="...">
+                        <p class="card-text"><small class="text-muted m-3">Last updated 3 mins ago</small></p>
+                        <div class="card-body">
+                            <h5 class="card-title mb-3">This is a wider card with supporting text below as a natural
+                                lead-in
+                                to
+                                additional content. This content is a little bit longer.</h5>
+                            <a href="#" class="card-text fs-6">
+                                <i class="bi bi-arrow-right"></i>
+                                Read more
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card shadow mb-3 d-flex  align-items-center p-3">
+                        <img src="./img/post3.png" class="card-img-top" alt="...">
+                        <p class="card-text"><small class="text-muted m-3">Last updated 3 mins ago</small></p>
+                        <div class="card-body">
+                            <h5 class="card-title mb-3">This is a wider card with supporting text below as a natural
+                                lead-in
+                                to
+                                additional content. This content is a little bit longer.</h5>
+                            <a href="#" class="card-text fs-6 ">
+                                <i class="bi bi-arrow-right"></i>
+                                Read more
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- ------------------Our Team ----------------- -->
+
+
+    <div class="py-4" id="navbarTeam">
+        <div class="container">
+            <h2 class="display-5 text-center mt-5">Our Team</h2>
+            <p class="text-muted lead text-center mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Necessitatibus expedita animi nesciunt fuga repellat unde pariatur explicabo et natus. Quo!</p>
+            <div class="row">
+                <div class="col-lg-3 text-center">
+                    <img src="./img/man1.jpg" class="img-fluid rounded-circle p-2 w-75 mb-4">
+                    <h2>Deco Milan</h2>
+                    <span>Founder</span>
+                    <ul class="list-unstyled d-flex justify-content-center my-2">
+                        <li class="mx-1">
+                            <a href="#" class="text-muted">
+                                <i class="bi bi-telegram"></i>
+                            </a>
+                        </li>
+                        <li class="mx-1">
+                            <a href="#" class="text-muted">
+                                <i class="bi bi-twitter"></i>
+                            </a>
+                        </li>
+                        <li class="mx-1">
+                            <a href="#" class="text-muted">
+                                <i class="bi bi-instagram"></i>
+                            </a>
+                        </li>
+                        <li class="mx-1">
+                            <a href="#" class="text-muted">
+                                <i class="bi bi-linkedin"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 text-center">
+                    <img src="./img/man2.jpg" class="img-fluid rounded-circle p-2 w-75 mb-4">
+                    <h2>Tom hardy</h2>
+                    <span>Developer</span>
+                    <ul class="list-unstyled d-flex justify-content-center my-2">
+                        <li class="mx-1">
+                            <a href="#" class="text-muted">
+                                <i class="bi bi-telegram"></i>
+                            </a>
+                        </li>
+                        <li class="mx-1">
+                            <a href="#" class="text-muted">
+                                <i class="bi bi-twitter"></i>
+                            </a>
+                        </li>
+                        <li class="mx-1">
+                            <a href="#" class="text-muted">
+                                <i class="bi bi-instagram"></i>
+                            </a>
+                        </li>
+                        <li class="mx-1">
+                            <a href="#" class="text-muted">
+                                <i class="bi bi-linkedin"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 text-center">
+                    <img src="./img/cvv.jpg" class="img-fluid rounded-circle p-2 w-75 mb-4">
+                    <h2>John smith</h2>
+                    <span>Co-Founder</span>
+                    <ul class="list-unstyled d-flex justify-content-center my-2">
+                        <li class="mx-1">
+                            <a href="#" class="text-muted">
+                                <i class="bi bi-telegram"></i>
+                            </a>
+                        </li>
+                        <li class="mx-1">
+                            <a href="#" class="text-muted">
+                                <i class="bi bi-twitter"></i>
+                            </a>
+                        </li>
+                        <li class="mx-1">
+                            <a href="#" class="text-muted">
+                                <i class="bi bi-instagram"></i>
+                            </a>
+                        </li>
+                        <li class="mx-1">
+                            <a href="#" class="text-muted">
+                                <i class="bi bi-linkedin"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 text-center">
+                    <img src="./img/woman1.jpg" class="img-fluid rounded-circle p-2 w-75 mb-4">
+                    <h2>Liza marco</h2>
+                    <span>Designer</span>
+                    <ul class="list-unstyled d-flex justify-content-center my-2">
+                        <li class="mx-1">
+                            <a href="#" class="text-muted">
+                                <i class="bi bi-telegram"></i>
+                            </a>
+                        </li>
+                        <li class="mx-1">
+                            <a href="#" class="text-muted">
+                                <i class="bi bi-twitter"></i>
+                            </a>
+                        </li>
+                        <li class="mx-1">
+                            <a href="#" class="text-muted">
+                                <i class="bi bi-instagram"></i>
+                            </a>
+                        </li>
+                        <li class="mx-1">
+                            <a href="#" class="text-muted">
+                                <i class="bi bi-linkedin"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ---------------------Q & A--------------------------------------->
+
+
+    <div class="py-4">
+        <div class="container">
+            <h2 class="display-5 text-center mt-5">Frequenly asked questions</h2>
+            <p class="text-muted lead text-center mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Necessitatibus expedita animi nesciunt fuga repellat unde pariatur explicabo et natus. Quo!</p>
+            <div class="accordion" id="accordionPanelsStayOpenExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                            aria-controls="panelsStayOpen-collapseOne">
+                            What's your job?
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
+                        aria-labelledby="panelsStayOpen-headingOne">
+                        <div class="accordion-body">
+                            <strong>This is the first item's accordion body.</strong> It is shown by default, until the
+                            collapse plugin adds the appropriate classes that we use to style each element. These
+                            classes control the overall appearance, as well as the showing and hiding via CSS
+                            transitions. You can modify any of this with custom CSS or overriding our default variables.
+                            It's also worth noting that just about any HTML can go within the
+                            though the transition does limit overflow.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                            aria-controls="panelsStayOpen-collapseTwo">
+                            Why should I trust you?
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
+                        aria-labelledby="panelsStayOpen-headingTwo">
+                        <div class="accordion-body">
+                            <strong>This is the second item's accordion body.</strong> It is hidden by default, until
+                            the collapse plugin adds the appropriate classes that we use to style each element. These
+                            classes control the overall appearance, as well as the showing and hiding via CSS
+                            transitions. You can modify any of this with custom CSS or overriding our default variables.
+                            It's also worth noting that just about any HTML can go within the
+                            though the transition does limit overflow.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                            aria-controls="panelsStayOpen-collapseThree">
+                            What's your mission?
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
+                        aria-labelledby="panelsStayOpen-headingThree">
+                        <div class="accordion-body">
+                            <strong>This is the third item's accordion body.</strong> It is hidden by default, until the
+                            collapse plugin adds the appropriate classes that we use to style each element. These
+                            classes control the overall appearance, as well as the showing and hiding via CSS
+                            transitions. You can modify any of this with custom CSS or overriding our default variables.
+                            It's also worth noting that just about any HTML can go within the
+                            though the transition does limit overflow.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="panelsStayOpen-headingFour">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false"
+                            aria-controls="panelsStayOpen-collapseFour">
+                            How much your base money?
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse"
+                        aria-labelledby="panelsStayOpen-headingFour">
+                        <div class="accordion-body">
+                            <strong>This is the third item's accordion body.</strong> It is hidden by default, until the
+                            collapse plugin adds the appropriate classes that we use to style each element. These
+                            classes control the overall appearance, as well as the showing and hiding via CSS
+                            transitions. You can modify any of this with custom CSS or overriding our default variables.
+                            It's also worth noting that just about any HTML can go within the
+                            though the transition does limit overflow.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="panelsStayOpen-headingFive">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false"
+                            aria-controls="panelsStayOpen-collapseFive">
+                            How much your base money?
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse"
+                        aria-labelledby="panelsStayOpen-headingFive">
+                        <div class="accordion-body">
+                            <strong>This is the third item's accordion body.</strong> It is hidden by default, until the
+                            collapse plugin adds the appropriate classes that we use to style each element. These
+                            classes control the overall appearance, as well as the showing and hiding via CSS
+                            transitions. You can modify any of this with custom CSS or overriding our default variables.
+                            It's also worth noting that just about any HTML can go within the
+                            though the transition does limit overflow.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="panelsStayOpen-headingSix">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapseSix" aria-expanded="false"
+                            aria-controls="panelsStayOpen-collapseSix">
+                            How much your base money?
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseSix" class="accordion-collapse collapse"
+                        aria-labelledby="panelsStayOpen-headingSix">
+                        <div class="accordion-body">
+                            <strong>This is the third item's accordion body.</strong> It is hidden by default, until the
+                            collapse plugin adds the appropriate classes that we use to style each element. These
+                            classes control the overall appearance, as well as the showing and hiding via CSS
+                            transitions. You can modify any of this with custom CSS or overriding our default variables.
+                            It's also worth noting that just about any HTML can go within the
+                            though the transition does limit overflow.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ----------------------- Contact --------------------- -->
+
+
+
+    <div class="py-4" id="navbarConatct">
+        <div class="container mb-5">
+            <h2 class="display-5 text-center mt-5">Frequenly asked questions</h2>
+            <p class="text-muted lead text-center mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Necessitatibus expedita animi nesciunt fuga repellat unde pariatur explicabo et natus. Quo!</p>
+            <div class="row g-4">
+                <div class="col-lg-6">
+                    <div class="row g-4">
+                        <div class="col-md-6">
+                            <div class=" d-flex flex-column justify-content-center bg-primary p-3 ">
+                                <a href="#" class="mb-4" style="color: #081828;">
+                                    <i class="bi bi-geo-alt-fill fs-2 mb-4"></i>
+                                </a>
+                                <h5>Address</h5>
+                                <span>A108 Adam Streat</span>
+                                <span>New York ,NY 535022</span>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class=" d-flex flex-column justify-content-center bg-primary p-3 ">
+                                <a href="#" class="mb-4" style="color: #081828;">
+                                    <i class="bi bi-telephone-fill fs-2 mb-4"></i>
+                                </a>
+
+                                <h5>Call us</h5>
+                                <span>+989011291713</span>
+                                <span>01333240921</span>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class=" d-flex flex-column justify-content-center bg-primary p-3 ">
+                                <a href="#" class="mb-4" style="color: #081828;">
+                                    <i class="bi bi-envelope-fill fs-2 mb-4"></i>
+                                </a>
+                                <h5>Email us</h5>
+                                <span>morteza0parvaneh@gmail.com</span>
+                                <span>VectorTeam@Gmail.com</span>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class=" d-flex flex-column justify-content-center bg-primary p-3 ">
+                                <a href="#" class="mb-4" style="color: #081828;">
+                                    <i class="bi bi-clock-fill fs-2 mb-4"></i>
+                                </a>
+                                <h5>Open Hours</h5>
+                                <span>Monday-Friday</span>
+                                <span>9:00AM - 05:00PM</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <form class="bg-primary p-4 rounded">
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Full name</label>
+                            <input type="text" class="form-control" id="contactFullname"
+                                placeholder="Ex: Morteza Parvaneh">
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                                <input type="email" class="form-control" id="contactEmail"
+                                    placeholder="name@example.com">
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleFormControlTextarea1" class="form-label">Your Comment</label>
+                                <textarea class="form-control" id="cantactComment" rows="3"></textarea>
+                            </div>
+                            <button class="btn btn-primary">Send</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- ------------------- Footer -------------------- -->
+
+    <div class="py-5 text-white" style="background-color: #081828;">
+        <footer class="container pt-5">
+            <div class="row py-3">
+                <div class="col-lg-3">
+                    <h2>Web Developers!</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab natus tenetur laboriosam optio sunt
+                        unde dolore, voluptatum ea eligendi adipisci.</p>
+                </div>
+                <div class="col-lg-3">
+                    <h3 class="border-start border-4 border-primary ps-3">Pages</h3>
+                    <ul class="list-unstyled mt-4">
+                        <li>
+                            <a class="text-decoration-none " style="color: #ddd;" href="#">Vue.js</a>
+                        </li>
+                        <li>
+                            <a class="text-decoration-none " style="color: #ddd;" href="#">React.js</a>
+                        </li>
+                        <li>
+                            <a class="text-decoration-none " style="color: #ddd;" href="#">Our team</a>
+                        </li>
+                        <li>
+                            <a class="text-decoration-none " style="color: #ddd;" href="#">Cotact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h3 class="border-start border-4 border-primary ps-3">More</h3>
+                    <ul class="list-unstyled mt-4">
+                        <li>
+                            <a class="text-decoration-none " style="color: #ddd;" href="#">Vue.js</a>
+                        </li>
+                        <li>
+                            <a class="text-decoration-none " style="color: #ddd;" href="#">React.js</a>
+                        </li>
+                        <li>
+                            <a class="text-decoration-none " style="color: #ddd;" href="#">Our team</a>
+                        </li>
+                        <li>
+                            <a class="text-decoration-none " style="color: #ddd;" href="#">Cotact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h3 class="border-start border-4 border-primary ps-3">Posts</h3>
+                    <ul class="list-unstyled mt-4">
+                        <li>
+                            <a class="text-decoration-none " style="color: #ddd;" href="#">Vue.js</a>
+                        </li>
+                        <li>
+                            <a class="text-decoration-none " style="color: #ddd;" href="#">React.js</a>
+                        </li>
+                        <li>
+                            <a class="text-decoration-none " style="color: #ddd;" href="#">Our team</a>
+                        </li>
+                        <li>
+                            <a class="text-decoration-none " style="color: #ddd;" href="#">Cotact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="text-center">Designed and Developed by <a class="text-decoration-none text-primary"
+                    href="#">Morteza Parvaneh</a></p>
+        </footer>
+    </div>
+
+
+
+
+
+
+    <!-- #--------------------------------------------------------- -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+.btn-primary,
+.btn-primary:focus,
+.btn-primary:visited {
+    background-color: #7a0dfd;
+    border-color: #8c2cff;
+}
+
+.btn-primary:hover,
+.btn-primary:active {
+    background-color: #5e13b9;
+    border-color: #6917ca;
+}
+
+.btn-primary:active:focus,
+.btn-primary:focus {
+    box-shadow: 0 0 0 .25 rgba(199, 49, 253, .5);
+}
+
+.text-primary {
+    color: #6906df;
+}
+
+.bg-primary {
+    background-color: #f9f8ff !important;
+
+}
+
+.border-primary {
+    border-color: #6906df !important;
+
+}
+
+.card-img-top {
+    max-width: 414px;
+    height: 280px;
+}
